@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{563D46F2-EB06-4914-8794-D8795912F92E}</ProjectGuid>
+    <ProjectGuid>{1210029A-2A3E-498C-8B5B-9F28B350B268}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InheritanceClasses</RootNamespace>
-    <AssemblyName>InheritanceClasses</AssemblyName>
+    <RootNamespace>StreamingContentRepositoryTest</RootNamespace>
+    <AssemblyName>StreamingContentRepositoryTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,15 +49,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animals\Animals.cs" />
-    <Compile Include="Animals\Cats.cs" />
-    <Compile Include="ClassesMorningPrompt.cs" />
-    <Compile Include="House.cs" />
-    <Compile Include="Kitchen.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepositoryPattern\RepositoryPattern.csproj">
+      <Project>{5aab4988-efc6-4fad-bc6a-f90fa9d4f1e4}</Project>
+      <Name>RepositoryPattern</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
